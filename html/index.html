@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to the best Food Delivering website in India|Jannat-E-Biryani</title>
+        <link rel="stylesheet" type="text/css" media="screen and (max-width:1146px )" href="phone.css">
+
+        <style>
+        	/* Navigation Bar */
+        	
+        	body{
+        		margin: 0;
+        		padding: 0;
+        	}
+        	:root{
+        		--navigation-height: 59px; 
+        	}
+        	
+        	 #navigation
+        	 {
+        	 	display: flex;
+        	 	
+ 			  position: sticky;
+ 			  top: 0px;
+
+ 			}
+ 			#navigation::before{
+ 				content: "";
+ 				background-color: black;
+ 				position: absolute;
+ 				height: 76%;
+ 				width: 200%;
+ 				top: 0px;
+ 				left: 0px;
+ 				z-index: -1;
+ 				opacity: 0.09;
+ 			}
+ 			#logo{
+ 				margin: 10px 36px;
+ 			}
+ 			#logo img{
+ 				margin: 3px 6px;
+ 				height: 171px;
+ 			}
+
+ 			.nav1 ul{
+ 				display: flex;
+ 				margin: 45px 50px;
+ 			}
+
+ 			
+ 			
+ 			.nav1 ul li{
+ 				
+ 				list-style: none;
+ 				font-size: 1.3rem;
+ 				padding: 34px;
+ 			}
+ 			.nav1 ul li a{
+ 				color: white;
+ 				display: block;
+ 			    padding: 3px 22px;
+ 			    border: 1px solid white;
+ 			    border-radius: 20px;
+ 			    text-decoration: none;
+ 			}
+ 			.nav1 ul li a:hover{
+ 				color: black;
+ 				background-color: white;
+ 				
+ 			}
+
+ 			/* Home Section */
+ 			#homepage{
+ 				display: flex;
+ 				flex-direction: column;
+ 				padding: 0px 200px;
+ 				justify-content: center;
+ 				align-items: center;
+ 				height: 645px;
+ 				transition-duration: 1s;
+        		transition-delay: 0.5s;
+        		transition: all 1s ease-in-out .3s;
+ 			}
+ 			#homepage::before{
+ 				content: "";
+ 				background: url('home1.jpg'); 
+ 				position: absolute;
+ 				top: 0px;
+ 				left: 0px;
+ 				height:126%   ;
+ 				width: 100%  ;
+ 				z-index: -1;
+ 				opacity: 0.89;
+ 			}
+ 			#homepage h1{
+ 				color: white;
+ 				text-align: center;
+ 				font-size: 3.8rem;
+ 				padding: 0px;
+ 			}
+ 			#homepage p{
+ 				color: white;
+ 				font-size: 1.3rem;
+ 				text-align: center;
+					}
+
+			
+
+			/* About Us */
+			#about{
+				margin: 34px;
+				display: flex;
+			}
+			#about .box{
+				border: 2px solid brown;
+				padding: 34px;
+				margin: 3px 6px;
+				border-radius: 12px;
+				background-color: #ffe3e3;
+			}
+
+			#about .box img{
+				height: 270px;
+				margin: auto;
+				display: block;
+			}
+
+
+			/* Sign up */
+			#login-box{
+	position:  relative;
+	height: 400px;
+	width: 600px;
+	background : #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+.left-box{
+	position: absolute;
+	top: 20;
+	left: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 300px;
+	height: 400px;
+}
+h1
+{
+	margin: 0 0 20px 0;
+	font-weight: 300;
+	font-size: 28px;
+}
+input[type= "text"],
+input[type="password"]
+{
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 4px;
+	width: 220px;
+	height: 32px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #aaa;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	transition: 0.2s ease;
+}
+input[type="submit"]
+{
+	margin-bottom: 28px;
+	width: 120px;
+	height: 32px;
+	background: #f44336;
+	border:#fff ;
+	font-family: sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+	background: #ff5722;
+	transition: 0.2s ease;
+}
+.right-box
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;;
+	padding: 40px;
+	width: 300px;
+	height: 400px;
+	background-image: url(bc.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.or{
+	position: absolute;
+	top: 180px;
+	left: 280px;
+	width: 40px;
+	height: 40px;
+	background: #efefef;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+	line-height: 40px;
+	text-align: center;
+}
+.right-box .signinwith{
+	display: block;
+	margin-bottom: 40px;
+	font-size: 28px;
+	color: #blue;
+	text-align: center;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+button.social
+{
+	margin-bottom: 20px;
+	width: 220px;
+	height: 36px;
+	border:none;
+	border-radius: 2px;
+	color: #blue;
+	font-family: sans-serif;
+	font-weight: 500;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+.facebook{
+	background: #32508e;
+}
+.twitter{
+	background: #55acee;
+}
+.google{
+	background: #dd4b39;
+}
+
+			#sign-up{
+ 				display: flex;
+ 				flex-direction: column;
+ 				padding: 20px 200px;
+ 				
+ 				height: 661px;
+ 				transition-duration: 1s;
+
+        		transition-delay: 0.5s;
+        		transition: all 1s ease-in-out .3s;
+ 			}
+ 			#sign-up::before{
+ 				content: "";
+ 				background: url('contact.jpg'); 
+ 				position: absolute;
+ 				height:102%   ;
+ 				width: 100%  ;
+ 				z-index: -1;
+ 				opacity: 0.89;
+ 				left: 0px;
+ 			}
+
+ 			 #sign-up h1{
+ 			 	color: white;
+ 				left: 140px;
+ 				font-size: 3.8rem;
+ 				padding: 35px;
+
+ 			 }
+
+ 			 /* contact us */
+			#contact {
+				display: flex;
+				align-items: center;
+				text-align: center;
+ 				flex-direction: column;
+ 				padding: 20px 200px;
+ 				height: 800px;
+ 				
+				}
+
+				#contact::before{
+ 				content: "";
+ 				background: url('ice.jpg'); 
+ 				position: absolute;
+ 				height:100%   ;
+ 				width: 100%  ;
+ 				z-index: -1;
+ 				opacity: 0.89;
+ 				left: 0px;
+ 			}
+ 			#contact h1{
+ 				color: white;
+ 				font-size: 3.8rem;
+ 			}
+
+ 			#contactbox{
+ 			 display: flex;
+ 			 padding: 12px;
+ 			 flex-direction: column;
+ 			}
+ 			 
+
+ 			 #cont123{
+ 			 	color: white;
+			font-size: 1.2rem; 			 
+ 			 }
+
+ 			 #contact input{
+ 			 	width: 500px;
+ 			 }
+ 			 #contact textarea{
+ 			 	width: 500px;
+ 			 	height: 290px;
+ 			 }
+ 			/* utility  class*/
+
+ 			.h-primary{
+ 				font-size: 3.8rem;
+ 				padding: 12px;
+ 			}
+ 			.h-secondary{
+ 				font-size: 2.8rem;
+ 				padding: 12px;
+ 			}
+
+ 			.btn{
+ 				padding: 8px 22px;
+ 				border: 2px solid white;
+ 				background-color: brown;
+ 				color: white;
+ 				cursor: pointer;
+ 				font-size: 1.5rem;
+ 				border-radius: 7px;
+ 				transition-duration: 1s;
+        		transition-delay: 0.1s
+ 			}
+ 			.btn:hover{
+ 				border: 3px solid black;
+ 				background-color: #ffe3e3;
+ 				color: black;
+ 				width:300px;
+        		height: 80px;
+
+ 			}
+ 			.center{
+        		text-align: center;
+        	}
+        	.s123{
+        		font-size: 2.8rem;
+ 				padding: 12px;
+ 				color: white;
+ 				margin: 10px 200px;
+ 				font-style: bold;
+        	}
+        	
+
+ 			        </style>
+    </head>
+    <body>
+    	<nav id="navigation">
+   			 <div id ="logo">
+    		 <img src="logo.png" alt="Jannat-E-Biryani"> </div>
+    		 <div class="nav1">
+    		 	<ul>
+    		 	<li><a href="#homepage"> Home </a></li>
+    		 	<li><a href="#About-us"> About Us </a></li>
+				<li><a href="#contact"> Contact Us </a></li>
+				<li><a href="#sign-up"> Sign up</a></li>
+				</ul>
+       		 </div>
+        </nav>
+
+        <section id="homepage">
+        	<h1 class="h-primary">Welcome to Jannat-E-Biryani</h1>
+        	<p>Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery company delivers food to a customer. An order is typically made either through a restaurant or grocer's website or phone, or through a food ordering company. The delivered items can include entrees, sides, drinks, desserts, or grocery items and are typically delivered in boxes or bags. The delivery person will normally drive a car, but in bigger cities where homes and restaurants are closer together, they may use bikes or motorized scooters. </p>
+        	<p> Order from your favorite restaurants & track on the go, with the all-new Jannat-E-Biryani. </p>
+        	<button class="btn">Order Now</button>
+        	time now is :<span id="time"></span>
+        </section>
+
+        <section id="About-us">
+        	<h1 class="h-primary center">
+        		About us
+        	</h1>
+        	<div id="about">
+        		<div class="box">
+        		<img src="logo3.png">
+        		<h2 class="h-secondary center"> introduction </h2>
+        		<p class="text center"> "Eros ludus laboramus ne eam. Mea inani utamur rationibus eu, his ei assum volutpat. Integre dolorem mel an, mei nihil omittam et. Postea regione mentitum ei quo, debitis phaedrum conceptam vis at. Fugit choro scriptorem nam an, vel ex possit audire. Qui elitr graeci referrentur ad, eu ludus laudem tincidunt vel, ad vim wisi graeci efficiendi" </p>
+        		<p class="center"> Founder, CEO</p>
+        		<p class="center"> Dev Mishra </p>
+        	</div>
+				<div class="box">
+					<img src="logo2.png">
+        		<h2 class="h-secondary center"> Food Delivery </h2>
+        		<p class="text center"> "Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery company delivers food to a customer. An order is typically made either through a restaurant or grocer's website or phone, or through a food ordering company. The delivered items can include entrees, sides, drinks, desserts, or grocery items and are typically delivered in boxes or bags. The delivery person will normally drive a car, but in bigger cities where homes and restaurants are closer together, they may use bikes or motorized scooters. " </p>
+        	</div>
+				<div class="box">
+					<img src="logo4.png">
+        		<h2 class="h-secondary center"> Amazing Food</h2>
+		 		<p class="text center"> "A Rich and Flavorful Layered Indian Dish
+				Long-grained rice (like basmati) flavored with exotic spices, such as saffron, is layered with lamb, chicken, fish, or vegetables, and a thick gravy. The dish is then covered, its lid secured with dough, and then the biryani is cooked over a low flame." </p>
+        	</div>
+        	</div>
+        </section>
+
+        <section id="sign-up">
+        	<h1 class="s123 center"> Sign Up for Extra Discounts </h1>
+        	
+        	
+ 			<div id="login-box">
+					<div class="left-box">
+						<input type="text" name="username" placeholder="Username"/>
+						<input type="text" name="email" placeholder="Email"/>
+						<input type="password" name="password" placeholder="Password"/>
+						<input type="password" name="password2" placeholder="Retype password"/>
+				<input type="submit" name="signup-button" value="Sign Up"/>
+</div>
+				<div class="right-box">
+					<span class="signinwith"> Sign in with </br> Social Network </span>
+					<button class="social facebook"> <a href="https://facebook.com">Log in with Facebook </button></a>
+					<button class="social twitter"> Log in with twitter </button>
+					<button class="social google"> Log in with google+ </button>
+				</div>
+				<div class="or">OR </div>
+        </section>
+
+        <section id="contact">
+        	<h1 class="cont"> Contact Us</h1>
+        	<div id="contactbox">
+        		<p id="cont123"> Tell us your problems, We are here to help</p>
+        		<input type="text" name="" placeholder=" Email">
+				<textarea class="white" placeholder="Message"></textarea> 
+				<button id="btn" onclick="togglehide()" > Submit</button>       
+					</div>
+        </section>
+        <!-- <script>
+        	let cont123 = document.getElementById('cont123');
+        	function togglehide()
+        	{
+			let cont123 = document.getElementById('cont123');
+			if(cont123.style.display = 'none')
+			{
+			cont123.style.display = 'none'; 
+			}
+			else
+			{
+				cont123.style.display = 'block'
+			}
+        	}
+
+        	function displaytime(){
+        		time = new date();
+        		console.Log(time);
+        		document.getElementById('time').innerHTML 
+        	}
+        </script> -->
+    </body>
+</html>

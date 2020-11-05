@@ -1,0 +1,45 @@
+#navigation{
+flex-direction: column;
+}
+
+#logo{
+
+}
+ 
+ #homepage{
+height: 300px;
+
+ }
+
+ #homepage::before{
+height: 400px;
+
+ }
+#homepage p{
+ 				
+ 				font-size: 13px;
+ 				
+					}
+
+
+ #about{
+display: flex;
+flex-direction: column;
+ }
+
+ #login-box{
+
+ }
+
+ #sign-up{
+
+ }
+
+ #contact{
+ 	overflow: hidden;
+ }
+
+ .h-primary{
+ 				font-size: 24px;
+ 		
+ 			}
